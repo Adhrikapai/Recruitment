@@ -1,0 +1,149 @@
+<!-- Names: ADHRIKA UDAYLAL PAI & AIMAN TAUSEEF
+     Program: Web Development
+     FINAL PROJECT  --->
+
+
+<!--THE RECRUITMENT PAGE --->
+
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FROSTY DELIGHT</title>
+    <link rel= "stylesheet" href="_css/style.css">
+  </head>
+
+
+  <body>
+      <div id= "content" >
+        <div id="employeeForm">
+        <h1> Human Resource Contact Page </h1>
+        <form method="POST" action="thanks.html" >
+
+
+        <div class="container">
+          <div id="welcomeMsg">
+            <h3 id="welcome"> Frosty Delight Welcomes You! </h3>
+            <h3> Please fill in all the following information. </h3>
+            <h3><em>*All fields are required</em></h3>
+          </div>
+          <div id="image">
+            <img src="images/unnamed.jpg" alt="company-logo" >
+          </div>
+        <!-- contact block -->
+          <h2> Personal Information </h2>
+          <fieldset id= "contactBlock">
+              <h4 id="fNameLabel"> *First Name: </h4>
+              <div id="fNameField">
+                <input id="firstName" type="text" name="fName" placeholder="Enter your name here"  autofocus="true" onkeyup="checkFN()" required="">
+              </div>
+              <h4 id="lNameLabel"> *Last Name: </h4>
+              <div id="lNameField">
+                <input id="lastName" type="text" name="lName"placeholder="Last name here" onkeyup="checkLN()" >
+              </div>
+              <h4 id="emailAddressLabel"> *E-mail Address: </h4>
+              <div id="emailAddressField">
+                 <input id="email" type="email" name="eAddress" size="60" placeholder="Enter your e-mail address here" onkeyup="checkEM()" >
+              </div>
+           </fieldset>
+        </div>
+
+        <hr>
+
+        <!-- recruitment Block -->
+        <h2> Recruitment Information </h2>
+        <div class="container">
+          <fieldset id="recruitmentBlock">
+            <h4 id="expYearLabel"> Number of years of expereince: </h4>
+            <div id="expYearField">
+              <input id= "expYearNum"type="text" min="0" max="50" name="expYear" size="2" onkeyup=checkEX()  >
+            </div>
+            <h4 id="startMonthLabel"> Choose the month from which you will be starting your work: <h4>
+            <div id="startMonthDropDown">
+                <select name= "startMonth" >
+                  <option value="initial"> --Choose a month -- </option>
+                  <option value="jan"> January</option>
+                  <option value="feb"> Febuary</option>
+                  <option value="mar"> March</option>
+                  <option value="apr"> April</option>
+                  <option value="may"> May</option>
+                  <option value="jun">June</option>
+                  <option value="july"> July </option>
+                  <option value="aug"> August</option>
+                  <option value="sep"> September</option>
+                  <option value="oct"> October </option>
+                  <option value="nov"> November</option>
+                  <option value="dec"> December</option>
+                </select>
+            </div>
+            <div id="salaryCompSelect">
+            <h4 id="salaryCompLabel"> Pick a salary compensation structure: </h4>
+            <br>
+              <input type="radio" name= "salary"> Salary </br>
+              <input type="radio" name= "salary"> Salary with bonus </br>
+              <input type="radio" name= "salary"> Compensation only </br>
+            </div>
+            <div id= "regionSelect">
+              <h4> What region are you willing to work in? </h4>
+              <input type="checkbox" name="north"> North <br>
+              <input type="checkbox" name="east"> East <br>
+              <input type="checkbox" name="south"> South <br>
+              <input type="checkbox" name="west"> West <br>
+            </div>
+        </fieldset>
+       </div>
+
+        <hr>
+          <!-- other information block -->
+        <h2> Other Information </h2>
+        <div class="container">
+          <fieldset id="otherInfoBlock">
+              <div id="refSelect">
+                  <h4 id="rangeLabel" > Select the number of references (1-5) you have by dragging the bar and verify your number by reading the text below: </h4>
+                  <input id= "refNum"type="range" name="refRange" min="1" max="5" onclick= returnRefNum()>
+                  <h4 id="refResult"> </h4>
+              </div>
+              <h4> Comment Area: </h4>
+              <textarea name="notes" rows="9" cols="80"> </textarea>
+              <div id="genderSelect">
+                  <h4> Pick your gender: </h4>
+                  <select name="Gender">
+                    <option value="Male"> Male </option>
+                    <option value="Female"> Female </option>
+                  </select>
+              </div>
+              <br>
+              <input id= "resetButton" type="Reset" >
+              <input id= "submitButton" type="button" value="Finish" onclick="validateInfo()"  >
+              <h4 id="validInfo" >  </h4>
+
+           </fieldset>
+
+        </div>
+        <hr>
+
+
+        <div id="details">
+
+          <p id="demo5" align="center"></p>
+          <p id="demo6" style="font-weight:bold;"></p>
+          <p id="demo1"></p>
+          <p id="demo2"></p>
+          <p id="demo3"></p>
+          <p id="demo4"></p>
+
+            <!-- <form  id = "thank" action= "thanks.html" method="POST" > -->
+              <input type="Submit" id="thanks"  style="display: none;">
+            <!-- </form> -->
+        </div>
+        </form>
+
+     </div>
+    </div>
+    <script src="scripts/main.js"> </script>
+  </body>
+
+</html>

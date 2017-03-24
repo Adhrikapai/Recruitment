@@ -1,0 +1,128 @@
+/* Names: ADHRIKA UDAYLAL PAI & AIMAN TAUSEEF
+     Program: Web Development
+     FINAL PROJECT */
+
+ /*STYLESHEET FOR RECRUITMENT PAGE*/
+
+ body,#content{
+  margin: 0px;
+
+}
+h4{
+  font-size: 20px;
+  color: black;
+  }
+h3{
+  color: white;
+  font-size: 20px;
+}
+  body{
+    background-image: url("../images/blackBG.jpg");
+  }
+  #welcomeMsg{
+    font-size: 25px;
+    color: white;
+    font-style: italic;
+  }
+  #image img{
+    width: 175px;
+    height: 100px;
+    float: right;
+    position: absolute;
+    bottom: 70%;
+    left:70%;
+  }
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+  color:white;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1000px;
+  text-shadow: 2px 2px 4px grey;
+  border: 2px double #DE1F76;
+  border-radius: 20px;
+  box-shadow: 0 6px 3px #DC143C	, 0 6px 3px #DC143C	;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px grey;
+
+}
+input,select{
+  height: 25px;
+  font-size: 16px;
+}
+#contactBlock,#recruitmentBlock,#otherInfoBlock{
+    background-color: #ffe6e9;
+    border-radius: 50px;
+    box-shadow: 0 6px 3px #DC143C	, 0 6px 3px #DC143C	;
+}
+#fNameLabel,#lNameLabel,#emailAddressLabel,#expYearLabel{
+float: left;
+margin-right: 5px;
+}
+#fNameField,#lNameField,#emailAddressField,#expYearField,#startMonthDropDown{
+  float: left;
+  margin-top: 15px;
+}
+#lNameLabel,#startMonthDropDown{
+  margin-left: 30px;
+}
+#emailAddressLabel,#startMonthLabel,#salaryCompLabel,#submitButton{
+  clear: both;
+}
+#startMonthLabel{
+  float: left;
+}
+#startMonthDropDown{
+  margin-top: 22px;
+}
+#salaryCompSelect{
+float: left;
+width: 500px;
+}
+#regionSelect{
+  float: right;
+}
+#genderSelect{
+  float: right;
+  margin-right: 95px;
+
+}
+#submitButton, #resetButton,#Finish{
+  clear: both;
+  width: 100px;
+  height: 50px;
+  background-color: #DC143C;
+  color: #F2F2F2;
+}
+
+#rangeLabel{
+  clear: both;
+  padding-top: 20px;
+}
+
+#validInfo{
+  clear: both;
+
+}
+#details{
+  color: white;
+  background-color: #DC143C	;
+  margin: 0 auto;
+  padding: 15px;
+  width: 70%;
+  border-radius: 50px;
+  box-shadow: 0 6px 3px white	, 0 6px 3px white	;
+
+}

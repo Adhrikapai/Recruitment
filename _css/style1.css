@@ -1,0 +1,28 @@
+/* Names: ADHRIKA UDAYLAL PAI & AIMAN TAUSEEF
+     Program: Web Development
+     FINAL PROJECT */
+
+     /*STYLESHEET FOR MAIN PAGE*/
+
+body{
+ margin: 0 auto;
+ background-image: url("../images/bck.jpg");
+ margin: 50px 50px 50px 50px;
+ text-align: center;
+}
+
+a:link, a:visited {
+    background-color: #FF1493;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+  }
+
+a:hover, a:active {
+    background-color: grey;
+    color: white;
+    width: 75%;
+}
